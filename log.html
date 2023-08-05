@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Milestone Project</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+     <!-- The overlay -->
+ <div id="myNav" class ="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href ="javascript:void(0)" class = "closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <a href = "#index.html" id= "homeID">Home</a>
+        <a href = "#recommend.html" id ="rec">Recommendation</a>
+        <a href = "#log.html" id = "logID">Form</a> 
+    </div>
+
+ </div>
+
+ <!-- Use any element to open/show the overlay navigation menu -->
+ <div id="test">
+ <span onclick="openNav()">&#9776;</span>
+ </div>
+
+    <div class="main_container">
+        <h1 id="main_title">Complete the Form</h1>
+        <p id="story_result"></p>
+        <form class="form_container">
+            <div class="adlib">
+                <label for="title_input">Username:</label>
+                <input type="text" id="title_input" placeholder="Type your username">
+            </div>
+
+            <div class="adlib">
+                <label for="noun">First Favorite Manhwa</label>
+                <input type="text" id="noun" placeholder="First favorite manhwa">
+            </div>
+
+            <div class="adlib">
+                <label for="verb">Second Favorite Manhwa:</label>
+                <input type="text" id="verb" placeholder="Second favorite manhwa">
+            </div>
+
+            <div class="adlib">
+                <label for="adjective">Password:</label>
+                <input type="text" id="adjective" placeholder="Enter your password">
+            </div>
+            <button id="submit_button">
+                Submit!
+            </button>
+        </form>
+
+    </div>
+    &copy; Michael Leung
+    <!-- Loading JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

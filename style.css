@@ -1,0 +1,215 @@
+span {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 37px;
+    background-color: #3c3177;
+    height: 100%;
+    margin-left: -1px;
+    margin-top: -10px;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#SL {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#synopsis {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    font-size: larger;
+}
+
+#test2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#Reasons {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#list {
+    display: grid;
+}
+
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay  */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0,0.9); /* Black fallback color */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  
+}
+
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+  text-decoration: underline;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+/* CSS FOR LOG.HTML */
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i');
+/* font-family: 'IBM Plex Serif', serif; */
+/* font-family: 'IBM Plex Sans', sans-serif; */
+
+body{
+    margin:0;
+    background-color: rgba(69, 98, 153, 0.6);
+}
+
+h1, button{
+    font-family: 'IBM Plex Serif', serif;
+}
+
+
+p, label, input{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.main_container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#main_title{
+    position: absolute;
+    top:0;
+}
+
+.form_container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.adlib{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.adlib label{
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+.adlib input{
+    flex:1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px #2989d8;
+    caret-color: #2989d8;
+    text-align: center;
+    font-size: 16px;
+}
+
+input:focus{
+    outline:none;
+}
+
+button{
+  display : inline-block;  
+  border-style : solid;
+  border-width : 1px;
+  border-radius : 50px;
+  padding : 10px 18px;
+  box-shadow : 0 1px 4px rgba(0,0,0,.6);
+  font-size : 20px;
+  font-weight : bold;
+  color : #fff;
+  text-shadow : 0 1px 3px rgba(0,0,0,.4);
+  text-decoration : none;
+  transition: all 2s;
+  border-color : #2989d8;
+  background-color: #2989d8;
+}
+
+button:hover{
+    border-color: #c80a00;
+    background: #c80a00;
+    box-shadow : -4px 5px 4px rgba(0,0,0,.8);    
+}
+
+/* Recommend HTML */
+
+.recImg {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 250px;
+}
+
+#rec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
